@@ -2,11 +2,12 @@ import React from 'react';
 import './Product.css'
 
 const Product = (props) => {
-    
+    console.log(props.product);
     const { key, name, category, discription,photo,price}=props.product;
     return (
         <div className="product">
-           <button className="single-product">
+           <button className="single-product"
+           onClick={()=>props.handleAddProduct(props.product)}>
            <div className="image">
                 
                 <img src={photo} alt=""/>
