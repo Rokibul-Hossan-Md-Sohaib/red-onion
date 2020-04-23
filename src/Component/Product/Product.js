@@ -6,7 +6,7 @@ const Product = (props) => {
     const { key, name, category, discription,photo,price}=props.product;
     return (
         <div className="product">
-           <div className="single-product">
+           <button className="single-product">
            <div className="image">
                 
                 <img src={photo} alt=""/>
@@ -15,8 +15,10 @@ const Product = (props) => {
         </div>
         <div className="describe">
 <             h4>{name}</h4>
+             <p>{category}</p>
+             <p>${price}</p>
         </div>
-           </div>
+           </button>
         </div>
     );
 };
