@@ -1,0 +1,28 @@
+.logo img{
+    height: 30px;
+}
+.picture img{
+
+width: 100%;
+margin-bottom: 100px;
+margin-top: 30px;
+
+}
+.picture{
+    text-align: center;
+}
+.picture nav{
+   
+    
+    line-height: 1px;
+    font-size: 20px;
+}
+nav a{
+    text-decoration:none;
+    margin-right: 20px;
+    padding: 5px;
+    color: red;
+}
+nav a:hover{
+    background-color: gray;
+}
