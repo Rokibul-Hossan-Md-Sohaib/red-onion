@@ -11,6 +11,7 @@ import {
   } from "react-router-dom";
 import NotFound from '../Not-Found/NotFound';
 import Head from '../Head/Head';
+import ProductDetail from '../ProductDetail/ProductDetail';
 
 
 
@@ -37,6 +38,9 @@ const Home = () => {
                 <Route path="/breakfast">
                 <Head></Head>
                 <Breakfest></Breakfest>
+                </Route>
+                <Route path="/Item/:dinner">
+                    <ProductDetail></ProductDetail>
                 </Route>
                
                 <Route  path="*">

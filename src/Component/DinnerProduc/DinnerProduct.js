@@ -1,13 +1,15 @@
 import React from 'react';
 import './DinnerProduct.css'
+import { Link } from 'react-router-dom';
+import ProductDetail from '../ProductDetail/ProductDetail';
 const DinnerProduct = (props) => {
-    console.log(props.dinnerPro);
-    const { id,name, category, discription,photo,price}=props.dinnerPro
+    console.log(props.key);
+    const { name, category, discription,photo,price,key}=props.dinnerPro;
     return (
         <div className="product">
-           <button className="single-product"
-           onClick={()=>props.handleDinnerProduct(props.dinnerPro)} 
-        >
+           <div className="single-product" ><Link to={"/Item/" +key }>
+           
+        
            <div className="image">
                 
                 <img src={photo} alt=""/>
@@ -19,7 +21,11 @@ const DinnerProduct = (props) => {
              <p>{category}</p>
              <p>${price}</p>
         </div>
-           </button>
+        </Link>
+        <ProductDetail></ProductDetail>
+        
+           </div>
+
         </div>
     );
 };

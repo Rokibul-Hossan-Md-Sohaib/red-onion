@@ -5,15 +5,15 @@ import BreakfastProduct from '../BrekfastProduct/BreakfastProduct';
 const Breakfest = () => {
     const second= breakfast;
     const [cat, setCat]= useState( second);
-    const handlefastProduct=(dinnerPro)=>{
-        console.log("add",dinnerPro)
-}
+//     const handlefastProduct=(dinnerPro)=>{
+//         console.log("add",dinnerPro)
+// }
     return (
         <div className="flex">
             {
               cat.map(rank=><BreakfastProduct
-                handlefastProduct={handlefastProduct}
-                key={rank.key}
+                // handlefastProduct={handlefastProduct}
+                // key={rank.key}
                 point={rank}></BreakfastProduct>)
             }
         </div>

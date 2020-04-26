@@ -1,49 +1,49 @@
 var breakfast = [{
     "key": 7 , 
     "category":"breakfast",
-    "description":"How we dream about our future.",
+    "description":"Also Yummy",
     "photo":"https://i.ibb.co/KqW8kxV/breakfast1.png",
-    "price":6.99,
+    "price":7.09,
     "name":"Simple Omlet"
  },
  {
     "key": 8 , 
     "category":"breakfast",
-    "description":"How we dream about our future.",
+    "description":"delicious",
     "photo":"https://i.ibb.co/GFW6Sqq/breakfast2.png",
-    "price":9.99,
+    "price":8.59,
     "name":"Fruity Bread"
  },
  {
     "key": 9, 
     "category":"breakfast",
-    "description":"How we dream about our future.",
+    "description":"Our Plater",
     "photo":"https://i.ibb.co/87Yd3jd/breakfast3.png",
-    "price":10.99,
+    "price":13.99,
     "name":"Coco Salad"
  },
  {
     "key": 10, 
     "category":"breakfast",
-    "description":"How we dream about our future.",
+    "description":"Latest Food",
     "photo":"https://i.ibb.co/YkJ0Csn/breakfast4.png",
-    "price":8.99,
+    "price":7.99,
     "name":"Bread Egg"
  },
  {
     "key": 11, 
     "category":"breakfast",
-    "description":"How we dream about our future.",
+    "description":"yummy",
     "photo":"https://i.ibb.co/3hSQLWy/breakfast5.png",
-    "price":19.99,
-    "name":"Sausage Mushroom"
+    "price":16.99,
+    "name":"Spacial Egg"
  },
  {
     "key": 12, 
     "category":"breakfast",
-    "description":"How we dream about our future.",
+    "description":"it's wow.",
     "photo":"https://i.ibb.co/WFLx6y2/breakfast6.png",
-    "price":3.99,
+    "price":13.99,
     "name":"Buttered Omlet"
  }
 ];

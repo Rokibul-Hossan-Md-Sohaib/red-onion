@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BreakfastProduct = (props) => {
     console.log(props.point);
-    const { key,name, category, discription,photo,price}=props.point
+    const { key,name, category, description,photo,price}=props.point
     return (
         <div className="product">
-           <button className="single-product"
-         onClick={()=>props.handlefastProduct(props.dinnerPro)} 
-        >
+           <div className="single-product"><Link to ={"/Item/"+key}>
+        {/* //  onClick={()=>props.handlefastProduct(props.dinnerPro)} 
+        // > */}
            <div className="image">
                 
                 <img src={photo} alt=""/>
@@ -16,10 +17,11 @@ const BreakfastProduct = (props) => {
         </div>
         <div className="describe">
 <             h4>{name}</h4>
-             <p>{category}</p>
+             <p>{description}</p>
              <p>${price}</p>
         </div>
-           </button>
+        </Link>
+           </div>
         </div>
     );
 };

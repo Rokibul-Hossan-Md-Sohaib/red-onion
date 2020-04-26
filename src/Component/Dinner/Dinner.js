@@ -7,15 +7,15 @@ import './Dinner.css';
 const Dinner = () => {
     const first =dinner;
     const [item, setItem]=useState( first);
-    const handleDinnerProduct=(dinnerPro)=>{
-        console.log("add",dinnerPro)
-    }
+    // const handleDinnerProduct=(dinnerPro)=>{
+    //     console.log("add",dinnerPro)
+    // }
     return (
         <div className="flex">
             {
                 item.map(dinner=><DinnerProduct 
-                    handleDinnerProduct={handleDinnerProduct}
-                    id={dinner.key}
+                    // handleDinnerProduct={handleDinnerProduct}
+                     key={dinner.key}
                      dinnerPro={dinner}></DinnerProduct> )
             }
         </div>

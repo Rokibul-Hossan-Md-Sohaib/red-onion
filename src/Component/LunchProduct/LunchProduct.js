@@ -1,13 +1,15 @@
 import React from 'react';
-import './Product.css'
+import './LunchProduct.css'
+import { Link } from 'react-router-dom';
+
 
 const Product = (props) => {
     console.log(props.product);
     const { key, name, category, discription,photo,price}=props.product;
     return (
         <div className="product">
-           <button className="single-product"
-           onClick={()=>props.handleAddProduct(props.product)}>
+           <div className="single-product"><Link to={"/Item/"+key}>
+        {/* //    onClick={()=>props.handleAddProduct(props.product)}> */}
            <div className="image">
                 
                 <img src={photo} alt=""/>
@@ -19,7 +21,8 @@ const Product = (props) => {
              <p>{category}</p>
              <p>${price}</p>
         </div>
-           </button>
+            </Link>
+           </div>
         </div>
     );
 };
