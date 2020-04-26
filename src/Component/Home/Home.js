@@ -39,7 +39,7 @@ const Home = () => {
                 <Head></Head>
                 <Breakfest></Breakfest>
                 </Route>
-                <Route path="/Item/:dinner">
+                <Route path="/Item/:itemKey">
                     <ProductDetail></ProductDetail>
                 </Route>
                

@@ -1,7 +1,7 @@
 import React from 'react';
 import './DinnerProduct.css'
 import { Link } from 'react-router-dom';
-import ProductDetail from '../ProductDetail/ProductDetail';
+
 const DinnerProduct = (props) => {
     console.log(props.key);
     const { name, category, discription,photo,price,key}=props.dinnerPro;
@@ -22,7 +22,7 @@ const DinnerProduct = (props) => {
              <p>${price}</p>
         </div>
         </Link>
-        <ProductDetail></ProductDetail>
+        
         
            </div>
 
