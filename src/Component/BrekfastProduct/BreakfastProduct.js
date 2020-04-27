@@ -15,12 +15,13 @@ const BreakfastProduct = (props) => {
                 
             
         </div>
+        </Link>
         <div className="describe">
 <             h4>{name}</h4>
              <p>{description}</p>
              <p>${price}</p>
         </div>
-        </Link>
+        
            </div>
         </div>
     );

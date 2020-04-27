@@ -1,0 +1,38 @@
+  .pro{
+      display: flex;
+  }
+
+.contant{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: px;
+    padding-top: 130px;
+    padding-right:500px;
+    padding-bottom: 200x;
+}
+.display{
+    
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-right: 50px;
+    padding-left: 200px;
+   
+    
+   
+}
+.display-btn{
+    color: red;
+    background-color: goldenrod;
+    width: 150px;
+    height: 30px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.paragraph{
+    text-align: justify;
+}

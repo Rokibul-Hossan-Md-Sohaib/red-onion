@@ -7,7 +7,8 @@ const DinnerProduct = (props) => {
     const { name, category, discription,photo,price,key}=props.dinnerPro;
     return (
         <div className="product">
-           <div className="single-product" ><Link to={"/Item/" +key }>
+           <div className="single-product" >
+               <Link to={"/Item/" +key }>
            
         
            <div className="image">
@@ -16,12 +17,13 @@ const DinnerProduct = (props) => {
                 
             
         </div>
+        </Link>
         <div className="describe">
 <             h4>{name}</h4>
              <p>{category}</p>
              <p>${price}</p>
         </div>
-        </Link>
+        
         
         
            </div>
