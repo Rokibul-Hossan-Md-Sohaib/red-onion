@@ -36,3 +36,6 @@
 .paragraph{
     text-align: justify;
 }
+.display-btn:hover{
+    background-color:yellowgreen;
+}

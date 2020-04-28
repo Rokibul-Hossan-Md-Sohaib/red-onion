@@ -18,7 +18,7 @@ const BreakfastProduct = (props) => {
         </Link>
         <div className="describe">
 <             h4>{name}</h4>
-             <p>{description}</p>
+             
              <p>${price}</p>
         </div>
         

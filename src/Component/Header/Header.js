@@ -10,9 +10,17 @@ const Header = () => {
         <div >
             <div className="logo">
             <img src={logo} alt=""/>
+            <nav>
+               
+             
+               <a href="/login">LogIn</a>
+               <a href="/signin">SignIn</a>
+               
+            </nav>
+
             </div>
             <div className ="picture">
-            <label htmlFor="search">Search Food</label>
+            <label  htmlFor="search">Search Food</label>
                 <input type="text"></input>
             <img src={picture} alt=""/>
             <Head></Head>

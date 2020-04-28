@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import './ProductDetail.css';
 
 
@@ -8,21 +8,28 @@ import fakeData from '../../fakedate';
 
 import DinnerProduct from '../DinnerProduc/DinnerProduct';
 import LunchProduct from '../LunchProduct/LunchProduct';
+import Head from '../Head/Head';
+
 const ProductDetail = () => {
     const {itemKey}= useParams()
    const pro= fakeData.find(pd=>pd.key==itemKey)
+   const [count, setCount]= useState();
     console.log(pro)
     return (
+        <div>
+            <Head></Head>
         <div className="pro">
+            
             <div className="display">
                <h1>{pro.name}</h1>
                <br/>
               <p  ><small className="paragraph"></small>{pro.description}</p>
-             <div><h3>${pro.price}   <button>+ </button> 1 <button>-</button></h3>
+             <div><h3>${pro.price}   <button onClick={()=>setCount+1}>+ </button> 1 <button onClick={count-1}>-</button></h3>
              
              </div> 
               <br/>
-              <button className="display-btn">Add</button>
+             <Link to ={"/login"}> <button className="display-btn">Add</button>
+             </Link>
             </div>
             <div className="contant">
             <img  src={pro.photo} alt=""/>
@@ -33,6 +40,7 @@ const ProductDetail = () => {
            
             
 
+        </div>
         </div>
     );
 };

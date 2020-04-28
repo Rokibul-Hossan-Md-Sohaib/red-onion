@@ -1,0 +1,28 @@
+.login-area {
+    padding: 100px 0;
+}
+
+.login-area img {
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+
+.login-area input {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: #ddd;
+}
+
+.login-area input[type=submit] {
+    background-color: #f10434;
+    color: #fff;
+}
+
+.login-area a {
+    color: #f10434;
+    display: inline-block;
+    margin-top: 30px;
+}

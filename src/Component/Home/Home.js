@@ -13,6 +13,9 @@ import NotFound from '../Not-Found/NotFound';
 import Head from '../Head/Head';
 import ProductDetail from '../ProductDetail/ProductDetail';
 
+import Login from '../LogIn/Login';
+import Signup from '../LogIn/Signup';
+
 
 
 
@@ -41,6 +44,12 @@ const Home = () => {
                 </Route>
                 <Route path="/Item/:itemKey">
                     <ProductDetail></ProductDetail>
+                </Route>
+                <Route path ="/login">
+                    <Login></Login>
+                </Route>
+                <Route path ="/signin">
+                    <Signup></Signup>
                 </Route>
                
                 <Route  path="*">

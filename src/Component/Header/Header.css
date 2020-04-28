@@ -1,5 +1,9 @@
 .logo img{
+    display: flex;
     height: 30px;
+}
+.logo nav{
+    padding-left: 85%;
 }
 .picture img{
 

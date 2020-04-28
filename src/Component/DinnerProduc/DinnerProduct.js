@@ -20,7 +20,7 @@ const DinnerProduct = (props) => {
         </Link>
         <div className="describe">
 <             h4>{name}</h4>
-             <p>{category}</p>
+             
              <p>${price}</p>
         </div>
         
