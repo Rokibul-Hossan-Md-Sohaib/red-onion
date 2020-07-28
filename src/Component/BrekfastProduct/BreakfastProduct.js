@@ -1,29 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 
 const BreakfastProduct = (props) => {
-    console.log(props.point);
-    const { key,name, category, description,photo,price}=props.point
-    return (
-        <div className="product">
-           <div className="single-product"><Link to ={"/Item/"+key}>
-        {/* //  onClick={()=>props.handlefastProduct(props.dinnerPro)} 
-        // > */}
-           <div className="image">
-                
-                <img src={photo} alt=""/>
-                
-            
-        </div>
-        </Link>
-        <div className="describe">
-<             h4>{name}</h4>
-             
-             <p>${price}</p>
-        </div>
-        
-           </div>
-        </div>
-    );
+  console.log(props.point);
+  const { key, name, category, description, photo, price } = props.product;
+  return (
+    <div className="product">
+      <button>
+        <img
+          className="my-image"
+          src={photo}
+          alt=""
+          onClick={() => props.handleAddProduct(props.product)}
+        />
+      </button>
+      <div className="describe">
+        <h4>{name}</h4>
+
+        <p>${price}</p>
+      </div>
+    </div>
+  );
 };
 export default BreakfastProduct;

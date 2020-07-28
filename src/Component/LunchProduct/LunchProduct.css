@@ -1,32 +1,37 @@
-.product{
-    width: 300px;
-    height: 300px;
-    
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-      
+.details {
+  display: flex;
+  justify-content: center;
 }
-.describe{
-    
-    color: violet;
-       
-}
-.product button{
-    border: none;
-    border-radius: none;
+.product {
+  width: 300px;
+  height: 300px;
 
- 
-    cursor: pointer;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
 }
-.product:hover{
-    background-color: wheat;
-    box-shadow:  gray;
+.describe {
+  color: violet;
+}
+.product button {
+  /* border: none;
+  border-radius: none; */
 
-    text-decoration:none;
-    margin-right: 20px;
-    padding:  1px;
-    padding-left: 1px;
-    padding-right: 1px;
+  cursor: pointer;
+}
+.my-image:hover {
+  background-color: wheat;
+  box-shadow: gray;
+
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
+/* <button
+className="main-button"
+onClick={() => props.handleAddProduct(props.product)}
+></button> */

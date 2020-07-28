@@ -1,35 +1,26 @@
-import React from 'react';
-import './DinnerProduct.css'
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./DinnerProduct.css";
 
 const DinnerProduct = (props) => {
-    console.log(props.key);
-    const { name, category, discription,photo,price,key}=props.dinnerPro;
-    return (
-        <div className="product">
-           <div className="single-product" >
-               <Link to={"/Item/" +key }>
-           
-        
-           <div className="image">
-                
-                <img src={photo} alt=""/>
-                
-            
-        </div>
-        </Link>
-        <div className="describe">
-<             h4>{name}</h4>
-             
-             <p>${price}</p>
-        </div>
-        
-        
-        
-           </div>
+  console.log(props.key);
+  const { name, category, discription, photo, price, key } = props.product;
+  return (
+    <div className="product">
+      <button>
+        <img
+          className="my-image"
+          src={photo}
+          alt=""
+          onClick={() => props.handleAddProduct(props.product)}
+        />
+      </button>
+      <div className="describe">
+        <h4>{name}</h4>
 
-        </div>
-    );
+        <p>${price}</p>
+      </div>
+    </div>
+  );
 };
 
 export default DinnerProduct;

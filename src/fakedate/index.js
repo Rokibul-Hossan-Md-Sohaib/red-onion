@@ -1,6 +1,6 @@
-import breakfast from './breakfast';
-import lunch from './lunch';
-import dinner from './dinner';
+import breakfast from "./breakfast";
+import lunch from "./lunch";
+import dinner from "./dinner";
 
 const fakeData = [...breakfast, ...lunch, ...dinner];
 // const shuffle = a => {
@@ -11,6 +11,5 @@ const fakeData = [...breakfast, ...lunch, ...dinner];
 // }
 
 // shuffle(fakeData);
-
 
 export default fakeData;
